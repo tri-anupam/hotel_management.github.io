@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Pie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Nixie+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(222, 235, 235);
+        }
+header {
+            position: fixed;
+            background-color: red;
+            width: 100vw;
+            z-index: 2;
+        }
+
+        nav {
+            background-color: #252525;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            border: 0.3vh ridge blue;
+        }
+
+        nav .logo img {
+            height: 8vh;
+            width: 4vw;
+            border-radius: 20.5vh;
+            margin-left: 3vh;
+        }
+
+        nav ul {
+            position: relative;
+            left: 36vw;
+        }
+
+        nav ul li {
+            display: inline;
+            position: relative;
+            padding: 1.3em;
+        }
+
+        nav ul li a {
+            display: inline;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            text-decoration: none;
+            font-size: 4vh;
+            font-weight: 300;
+        }
+
+        nav ul li a:hover {
+            text-decoration: white underline;
+            color: rgb(221, 213, 213);
+        }
+
+        .order_online {
+            position: relative;
+            padding: 14px 14px 5px 25px;
+            border: 1px solid white;
+        }
+
+
+        .container {
+            top: 10vh;
+            width: 100vw;
+            height: 95vh;
+            position: absolute;
+            border: 0.1px solid white;
+            background-image: url('food1.jpg');
+            background-size: 100% 100%;
+            display: grid;
+            place-items: center;
+            animation: slider 9s infinite linear;
+        }
+
+        @keyframes slider {
+
+            0% {
+                background-image: url('Food3.jpg');
+            }
+
+            25% {
+                background-image: url('26.jpg');
+            }
+
+            50% {
+                background-image: url('restaurant.jpg');
+            }
+
+            75% {
+                background-image: url('food2.jpg');
+            }
+
+            100% {
+                background-image: url('food1.jpg');
+            }
+        }
+
+        .container .box img {
+            opacity: 0.3;
+            border-radius: 72vh;
+            height: 40vh;
+            width: 40vh;
+        }
+
+        .container .box img:hover {
+            opacity: 0.9;
+            height: 50vh;
+            width: 50vh;
+        }
+
+        .container .box1 {
+            background: #ed1b24;
+            font-family: 'cursive';
+            margin-top: 10px;
+            padding: 12px 22px;
+            text-transform: uppercase;
+            color: white !important;
+            text-decoration: none;
+            display: inline;
+        }
+
+        .container .box1:hover {
+            border: 1px solid black;
+        }
+
+        main .query {
+            background: rgba(168, 167, 167, 0.1);
+            text-align: center;
+            position: relative;
+            top: 105vh;
+            font-size: 9.3pt;
+            line-height: 26px;
+            color: rgb(128, 128, 128);
+            letter-spacing: 1px;
+
+        }
+
+        main .query p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-family: 'caviar_dreamsregular';
+        }
+
+
+        main h3 {
+            position: relative;
+            top: 103vh;
+            color: orange;
+            font-family: 'Changa', sans-serif;
+            font-size: xx-large;
+            background-color: white;
+        }
+
+        .intro {
+            position: relative;
+            top: 103vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+
+        }
+
+        .intro1 img {
+            height: 81vh;
+            width: 28vw;
+        }
+
+        .intro2 {
+            text-align: center;
+            font-family: 'Changa', sans-serif;
+            font-family: 'Nixie One', cursive;
+            height: 87vh;
+            width: 34vw;
+            padding: 11vh;
+            font-size: 130%;
+            color: rgba(128, 128, 128, 0.705);
+        }
+
+        .intro2:hover {
+            color: rgb(19, 18, 18);
+        }
+
+        .top1 {
+            color: blue;
+            font-size: xx-large;
+            background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+            bottom: 79px;
+            position: fixed;
+            height: 46px;
+            width: 49px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 19px;
+            /* border-radius: 1em; */
+            z-index: 5;
+        }
+
+        .top1 a {
+            height: 46px;
+            width: 49px;
+            padding-left: 16px;
+
+        }
+
+        .top1:hover {
+            background-color: white;
+        }
+
+        .offer {
+            position: relative;
+            top: 110vh;
+            width: 100vw;
+            height: 50vh;
+            border: 0.1px solid white;
+            background-image: url('offer1.jpg');
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: sllider 9s infinite linear;
+        }
+
+        @keyframes sllider {
+
+            0% {
+                background-image: url('offer1.jpg');
+            }
+
+            45% {
+                background-image: url('offer2.jpg');
+            }
+
+            95% {
+                background-image: url('offer3.jpg');
+            }
+
+
+
+        }
+
+        .offer .click {
+            color: white !important;
+            text-decoration: none;
+            font-size: xx-large;
+            position: relative;
+            right: -40vw;
+            bottom: -22vh;
+        }
+
+
+        footer {
+            position: relative;
+            top: 110vh;
+            background-color: #252525;
+            color: white;
+            border: 1px solid blue;
+            height: 9vh;
+            text-align: center;
+            font-size: xx-large;
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="image">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Franchise</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="About Us"></a></li>
+                <li class="order_online"><a href="#">Order Online</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box"><img src="logo.jpg" alt="logo"></div>
+            <div class="box1"><a href="#">order online</a></div>
+        </div><br>
+        <div class="query">
+            <p>
+                Due to the current situation related to Covid-19 and as per the guidelines issued by the GOVERNMENT,
+                Tasty
+                Pie
+                is currently closed. For any queries, please email us at reservations.del@tastypie.com</p>
+        </div>
+        <div class="top1"><a href="#">^</a></div>
+        <h3>About Us</h3>
+        <div class="intro">
+            <div class="intro1"><img src="Rashogolla-1.jpg" alt="image"></div>
+            <div class="intro2">Tasty Pie showcases inventive Indian cuisine by complementing the flavours and
+                traditions of India with global ingredients and techniques.
+
+                Tasty Pie has been featured in the World's 50 Best Restaurants 2019. It has been awarded the San
+                Pellegrino Best Restaurant Award in India by Asia's 50 Best Restaurants 2021 for the Seventh consecutive
+                year. It has also been rated as the No.1 Restaurant in India by TripAdvisor consistently from 2014 -
+                2019. Indian Accent has been awarded the Number 1 Restaurant in India by Condé Nast Traveller and
+                Himalayan Sparkling Top Restaurant Awards.</div>
+        </div>
+        <h3>Exclusive Offers</h3>
+        <div class="offer">
+            <div class="click">
+
+                For more <a href="#">click here..</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        All Rights Reserved.
+    </footer>
+</body>
+
+</html>
